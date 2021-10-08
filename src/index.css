@@ -1,0 +1,448 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
+  /* padding: 20px 20px; */
+  
+}
+body a{
+  color: white;
+  text-decoration: none;
+}
+
+
+  .top{
+    position: fixed;
+  right: 10px;
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  text-shadow: -1px 0px 9px rgba(255, 255, 255, 1);
+  }
+
+
+/* NavBar  starts*/
+
+.nav-bar{
+  /* position: fixed; */
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  z-index: 5;
+  background: black;
+}
+
+.nav-bar h1{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.nav-bar h1:hover{
+  cursor: pointer;
+}
+
+.nav-bar ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.1em;
+  margin-right: 20px;
+  
+  /* height: 0; */
+}
+
+.nav-bar ul li:hover{
+  cursor: pointer;
+  color: gray;
+}
+.nav-bar .btn{
+  background: #ff0062;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+
+.nav-bar .btn:hover{
+  cursor: pointer;
+  background: blue;
+  color: white;
+}
+
+.nav-bar .hamburger{
+  display: none;
+  cursor: pointer;
+} 
+
+/* navbar ends */
+
+/* Project section starts */
+.project{
+  position: relative;
+  padding: 20px ;
+}
+.project .social-links{
+  width: 70%;
+  z-index: 1;
+  background: -moz-linear-gradient(left,  rgba(7,5,4,1) 67%, rgba(7,5,4,0.55) 82%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(7,5,4,1) 67%,rgba(7,5,4,0.55) 82%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(7,5,4,1) 67%,rgba(7,5,4,0.55) 82%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding-top: 40px;
+}
+
+.project .image-frame{
+  max-width: 98%;
+  margin: 30px auto ;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.project img{
+  width: 20%;
+}
+
+.project .social-links h1{
+  font-size: 5em;
+  margin-top: 100px;
+}
+.project p{
+  font-size: 1.2em;
+  margin-top: 25px;
+  width: 70%;
+  color: whitesmoke;
+}
+
+a.btn{
+  display: flex;
+  font-size: 1.1em;
+  width: 120px;
+  height: 30px;
+  padding: 2%;
+  border-radius: 8px;
+  background: #ff0062;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+a.btn:hover{
+  background: blue;
+}
+
+.project .buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.project span{
+  font-weight: bold;
+}
+
+.image-frame >div:nth-child(1), .image-frame > div:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.image-frame{
+  overflow: hidden;
+}
+
+.image-frame > div:nth-child(2){
+  margin-top: 30px;
+  animation: move-images 7s forwards linear infinite;
+
+}
+
+.image-frame >div:nth-child(1){
+  animation: move-images 6s forwards reverse linear infinite;
+}
+/* Project section ends */
+
+
+/* boar-section starts */
+
+.boar-section > div:nth-child(1){
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 30px;
+}
+
+
+.boar-section > div:nth-child(1) >img{
+  width: 50%;
+}
+
+  .boar-section > div:nth-child(1) > div > h1{
+    font-size: 200%;
+  }
+  .boar-section > div:nth-child(1) > div > p{
+    margin-top: 30px;
+    font-size: 1.2em;
+    width: 80%;
+  }
+
+  .boar-section ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    width: 96%;
+    margin: 20px auto;
+  }
+
+  .boar-section ul li{
+    text-align: center;
+  }
+
+  .boar-section ul li p:nth-child(1){
+    font-size: 3em;
+  }
+
+  .boar-section ul li p:nth-child(2){
+    font-size: 16px;
+  }
+/* boar-section ends */
+
+/* discord section starts */
+.discord-section {
+  width: 90%;
+  background: purple;
+  margin: 40px auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.discord-section p{
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.discord-section a{
+  margin: 10px auto;
+}
+
+.discord-section img{
+  width: 40%;
+}
+/* discord section ends */
+
+
+
+/* media queries */
+
+/* navbar media query starts */
+@media screen and (max-width: 980px ){
+  .nav-bar .hamburger{
+    display: block;
+    grid-area: hamburger;
+    align-self: center;
+  }
+  /* .top{
+    position: fixed;
+  right: 10px;
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  } */
+
+  .nav-bar{
+    grid-template-columns: auto auto auto 10px;
+    grid-template-rows: auto auto;
+    max-width: 95%;
+    margin: 0 auto;
+              grid-template-areas:
+                  "h1 h1 h1 h1 hamburger"
+                  "ul ul ul ul ul";
+    position: relative;
+                 
+  }
+  .nav-bar ul{
+    grid-area: ul;
+    transform: translateY(-500px);
+    position: absolute;
+    top: -400px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: all 1s linear;
+  }
+  .nav-bar ul.open{
+   transform: translateY(0px);
+  position: static;
+  }
+
+  .nav-bar ul li{
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  .nav-bar h1{
+    grid-area: h1;
+   align-self: flex-start;
+  }
+
+  .nav-bar .btn{
+    margin: 20px auto;
+    font-size: 1.1em;
+  }
+
+  /* project starts  */
+  .project{
+    position: static;
+    margin: 10px auto;
+  }
+  .project .social-links{
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .project .image-frame{
+    position: static;
+    margin-top: 30px;
+  }
+  
+  .project .social-links h1{
+    font-size: 300%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  a.btn{
+    margin: 20px auto;
+  }
+
+  .project p{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .project .buttons{
+    /* width: 60%; */
+    margin: 20px auto;
+  
+  }
+
+  .image-frame > div:nth-child(2){
+    margin-top: 30px;
+    animation: bounce 3s forwards linear infinite;
+  
+  }
+  
+  .image-frame >div:nth-child(1){
+    animation: bounce 3s forwards reverse linear infinite;
+  }
+  /* project ends */
+
+  /* boar-section starts */
+
+.boar-section > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+
+.boar-section > div:nth-child(1) >img{
+  width: 100%;
+}
+
+  .boar-section > div:nth-child(1) > div > h1{
+    font-size: 200%;
+  }
+  .boar-section > div:nth-child(1) > div > p{
+    margin-top: 30px;
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .boar-section ul{
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+/* boar-section ends */
+
+/* discord section starts */
+.discord-section {
+  flex-wrap: wrap;
+  flex: 50%;
+}
+
+.discord-section p{
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.
+
+.discord-section img{
+  width: 40%;
+}
+/* discord section ends */
+}
+
+@media screen and (max-width: 600px){
+  .nav-bar{
+    max-width: 400px;
+  }
+
+  }
+
+/* navbar media query ends */
+
+
+/* animation */
+@keyframes move-images{
+  0%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(500px)
+  }
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(20px);
+  }
+
+  75%{
+    transform: translateY(10px)
+  }
+  100%{
+    transform: translateY(20px)
+  }
+}
+
+/* animation ends */

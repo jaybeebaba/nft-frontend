@@ -1,0 +1,47 @@
+footer {
+    max-width: 98%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "  copyright socials";
+    align-items: center;
+}
+
+footer > p{
+    grid-area: copyright;
+    font-size: 12px;
+}
+
+footer > div{
+    grid-area: socials;
+}
+footer img{
+    width: 20px;
+}
+
+footer div i{
+    font-size: 20px;
+}
+
+
+footer >div a{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 980px){
+    footer {
+        grid-template-columns: auto;
+        grid-template-areas: "socials"
+                              "copyright";
+        align-items: center;
+    }
+
+    footer > div{
+        margin: 0 auto
+    }
+
+    footer > p{
+        margin: 20px auto
+    }
+}

@@ -1,0 +1,45 @@
+.community > p:nth-child(1){
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.community > p:nth-child(2){
+    font-size: 1.2em;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+
+}
+
+.community > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.community > div p{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.community > div img{
+    width: 50%;
+    border-radius: 30px;
+
+}
+
+@media screen and (max-width: 980px){
+    .community > div{
+        flex-wrap: wrap;
+        flex: 50%;
+        justify-content: center;
+    }
+
+    .community > div img{
+        width: 90%;    
+    }
+}
